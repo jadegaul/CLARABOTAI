@@ -91,4 +91,77 @@ python3 skills/clickup-skill/scripts/clickup_client.py update_task task_id="86dz
 
 ---
 
+### Gmail
+
+**Status:** ✅ Configured for **claragaulai@gmail.com** only
+
+**Primary Account:** `claragaulai@gmail.com`
+
+**Important:** Only use this account for Gmail operations:
+- Check/read emails
+- Send messages
+- Reply to messages
+- Search inbox
+- Draft emails
+
+**Do not use** `jeremylgaul@gmail.com` for Gmail unless explicitly requested.
+
+---
+
+### Subagents & Messaging
+
+**Important:** Subagents cannot resolve display names like "Jade" when sending messages.
+
+**For Telegram:**
+- ❌ "Jade" - Won't work (display name not resolvable)
+- ✅ "7152537300" - Chat ID (works)
+- ✅ "@jadegaul" - Username (works if configured)
+
+**Always use:**
+- Telegram chat IDs (numeric)
+- Telegram usernames (with @)
+- Specific channel/user identifiers
+
+---
+
+### SAG (ElevenLabs TTS)
+
+**Status:** ✅ Configured and ready to use
+
+**Location:** `/home/linuxbrew/.linuxbrew/bin/sag`
+**Version:** 0.2.2
+
+**API Key:** Stored in `~/.config/elevenlabs-api-key` (600 permissions)
+
+**Environment Setup:**
+```bash
+export ELEVENLABS_API_KEY_FILE="$HOME/.config/elevenlabs-api-key"
+```
+
+**Preferred Voices:**
+- **Roger** - Laid-Back, Casual, Resonant (storytelling, casual content)
+- **Sarah** - Mature, Reassuring, Confident (professional)
+- **George** - Warm, Captivating Storyteller (narration)
+- **River** - Relaxed, Neutral, Informative (announcements)
+
+**Usage Examples:**
+```bash
+# Basic speak (uses default voice)
+sag "Hello, this is a test"
+
+# Use specific voice
+sag speak -v Roger "Hello in Roger's voice"
+
+# Save to file instead of playing
+sag speak -v Sarah --output /tmp/output.mp3 "Text to save"
+
+# List all voices
+sag voices
+
+# See prompting tips for better speech
+sag prompting
+```
+
+---
+
 Add whatever helps you do your job. This is your cheat sheet.
