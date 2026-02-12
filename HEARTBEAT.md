@@ -8,10 +8,13 @@ Every 4 hours
 - **Heartbeat:** Every 4 hours
 
 ## Checks
-- Kanban board (new tasks, status updates)
+- Kanban board — check BOTH lists:
+  - Jade's Task List (list_id=901710515957)
+  - Clara's Task List (list_id=901710515956)
 - Calendar (upcoming events <2h)
 - Communications (emails, messages)
 - System status (context usage)
+- **Ollama Cloud usage** — monitor session/weekly limits at https://ollama.com/settings
 
 ## Memory Maintenance
 Periodically review daily notes, update MEMORY.md with distilled learnings.

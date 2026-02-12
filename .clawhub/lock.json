@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skills": {
+    "clickup-skill": {
+      "version": "1.1.1",
+      "installedAt": 1770370049195
+    },
+    "youtube-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1770861068594
+    }
+  }
+}

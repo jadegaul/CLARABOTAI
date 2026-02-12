@@ -1,0 +1,251 @@
+{
+  "agents": {
+    "defaults": {
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "contextPruning": {
+        "mode": "cache-ttl",
+        "ttl": "1h"
+      },
+      "maxConcurrent": 4,
+      "memorySearch": {
+        "enabled": false
+      },
+      "model": {
+        "fallbacks": [
+          "openrouter/moonshotai/kimi-k2.5"
+        ],
+        "primary": "ollama/kimi-k2.5:cloud"
+      },
+      "models": {
+        "ollama/kimi-k2.5:cloud": {},
+        "openrouter/moonshotai/kimi-k2.5": {
+          "alias": "kimi"
+        }
+      },
+      "subagents": {
+        "maxConcurrent": 8
+      },
+      "thinkingDefault": "minimal",
+      "typingMode": "instant",
+      "workspace": "/home/jeremygaul/.openclaw/workspace"
+    }
+  },
+  "auth": {
+    "profiles": {
+      "kimi:default": {
+        "mode": "api_key",
+        "provider": "openrouter"
+      },
+      "openrouter:default": {
+        "mode": "api_key",
+        "provider": "openrouter"
+      }
+    }
+  },
+  "browser": {
+    "attachOnly": false,
+    "color": "#FF4500",
+    "defaultProfile": "chrome",
+    "enabled": true,
+    "headless": false,
+    "noSandbox": false,
+    "profiles": {
+      "openclaw": {
+        "cdpPort": 18800,
+        "color": "#FF4500"
+      }
+    }
+  },
+  "channels": {
+    "telegram": {
+      "botToken": "8450882215:AAHUz1eyY5vhGTaBQa4aTyWviGih4NT4lWE",
+      "dmPolicy": "pairing",
+      "enabled": true,
+      "groupPolicy": "allowlist",
+      "groups": {
+        "*": {
+          "requireMention": false
+        }
+      },
+      "streamMode": "partial"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true
+  },
+  "diagnostics": {
+    "cacheTrace": {
+      "enabled": true,
+      "includeMessages": true,
+      "includePrompt": true
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "password",
+      "password": "maskim"
+    },
+    "bind": "loopback",
+    "mode": "local",
+    "port": 18789,
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "hooks": {
+    "gmail": {
+      "thinking": "minimal"
+    },
+    "internal": {
+      "enabled": true,
+      "entries": {
+        "boot-md": {
+          "enabled": true
+        },
+        "session-memory": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "meta": {
+    "lastTouchedAt": "2026-02-12T01:48:27.898Z",
+    "lastTouchedVersion": "2026.2.6-3"
+  },
+  "models": {
+    "providers": {
+      "ollama": {
+        "api": "openai-completions",
+        "apiKey": "ollama-local",
+        "baseUrl": "http://127.0.0.1:11434/v1",
+        "models": [
+          {
+            "contextWindow": 131072,
+            "cost": {
+              "cacheRead": 0,
+              "cacheWrite": 0,
+              "input": 0,
+              "output": 0
+            },
+            "id": "kimi-k2.5:cloud",
+            "input": [
+              "text"
+            ],
+            "maxTokens": 16384,
+            "name": "kimi-k2.5:cloud",
+            "reasoning": false
+          }
+        ]
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "session": {
+    "typingMode": "instant"
+  },
+  "skills": {
+    "entries": {
+      "1password": {
+        "enabled": false
+      },
+      "apple-notes": {
+        "enabled": false
+      },
+      "apple-reminders": {
+        "enabled": false
+      },
+      "bear-notes": {
+        "enabled": false
+      },
+      "blucli": {
+        "enabled": false
+      },
+      "camsnap": {
+        "enabled": false
+      },
+      "goplaces": {
+        "enabled": false
+      },
+      "himalaya": {
+        "enabled": false
+      },
+      "imsg": {
+        "enabled": false
+      },
+      "local-places": {
+        "enabled": false
+      },
+      "model-usage": {
+        "enabled": false
+      },
+      "moltbook": {
+        "enabled": false
+      },
+      "nano-banana-pro": {
+        "enabled": false
+      },
+      "notion": {
+        "enabled": false
+      },
+      "openai-image-gen": {
+        "enabled": false
+      },
+      "openai-whisper-api": {
+        "enabled": false
+      },
+      "openhue": {
+        "enabled": false
+      },
+      "oracle": {
+        "enabled": false
+      },
+      "ordercli": {
+        "enabled": false
+      },
+      "peekaboo": {
+        "enabled": false
+      },
+      "sag": {
+        "enabled": true
+      },
+      "wacli": {
+        "enabled": false
+      }
+    },
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "tools": {
+    "web": {
+      "fetch": {
+        "cacheTtlMinutes": 30,
+        "enabled": true
+      },
+      "search": {
+        "cacheTtlMinutes": 60,
+        "enabled": true
+      }
+    }
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-12T01:48:27.892Z",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local",
+    "lastRunVersion": "2026.2.6-3"
+  }
+}
