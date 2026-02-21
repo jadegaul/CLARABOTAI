@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "Look for the top news today about transgender topics",
+      "column": "archive",
+      "type": "subagent",
+      "assignee": "SA",
+      "assigneeName": "NewsAgent",
+      "created": 1771187443000,
+      "updated": 1771184146174
+    }
+  ],
+  "activities": [
+    {
+      "type": "success",
+      "message": "Sub-agent NewsAgent completed task: transgender news search",
+      "timestamp": 1771189569000
+    },
+    {
+      "type": "system",
+      "message": "Sub-agent NewsAgent started for task task-001",
+      "timestamp": 1771187443000
+    }
+  ],
+  "subagents": [
+    {
+      "id": "sa-001",
+      "name": "NewsAgent",
+      "status": "completed",
+      "taskId": "task-001",
+      "started": 1771187443000,
+      "completed": 1771189569000
+    }
+  ],
+  "docs": [
+    {
+      "name": "Transgender News Report - Feb 15, 2026",
+      "url": "https://docs.google.com/document/d/1xTDmVWr-bwbWwrs-9MSHD-sgBK4IUOMNOKp2S4d2KCs/edit",
+      "type": "google-doc",
+      "size": "Google Docs",
+      "created": 1771192026000
+    }
+  ],
+  "status": "Idle",
+  "online": true,
+  "lastSync": 1771184146174
+}

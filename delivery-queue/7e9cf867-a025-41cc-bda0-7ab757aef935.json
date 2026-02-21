@@ -1,0 +1,17 @@
+{
+  "id": "7e9cf867-a025-41cc-bda0-7ab757aef935",
+  "enqueuedAt": 1771369180889,
+  "channel": "whatsapp",
+  "to": "heartbeat",
+  "payloads": [
+    {
+      "text": "🔔 **Heartbeat Check**\n\nGood news: ClickUp is clear and no calendar events coming up.\n\nOne thing to note — there's a **Google Security Alert** email in claragaulai@gmail.com from Feb 15. Might be worth a quick look to make sure everything's okay.\n\nCouldn't check Ollama Cloud usage (needs login), but your local model is running fine.",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": true,
+  "retryCount": 2,
+  "lastError": "Outbound not configured for channel: whatsapp"
+}

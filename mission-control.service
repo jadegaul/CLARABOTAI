@@ -1,0 +1,16 @@
+[Unit]
+Description=Mission Control Server
+After=network.target
+
+[Service]
+Type=simple
+User=USERNAME
+WorkingDirectory=SERVER_PATH
+ExecStart=/usr/bin/node SERVER_PATH/server.js
+Restart=always
+RestartSec=10
+StandardOutput=append:SERVER_PATH/server.log
+StandardError=append:SERVER_PATH/server.error.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "1543e95e-ca1e-4488-b611-61be39a01ae5",
+      "agentId": "main",
+      "name": "daily-summary",
+      "enabled": true,
+      "createdAtMs": 1770343730497,
+      "updatedAtMs": 1771596000019,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Generate a daily summary for Jade: Check the weather forecast, check the Kanban board for pending tasks, review today's calendar events, check for unread emails, and summarize what needs attention today. Send the summary to Telegram."
+      },
+      "state": {
+        "nextRunAtMs": 1771682400000,
+        "lastRunAtMs": 1771596000009,
+        "lastStatus": "ok",
+        "lastDurationMs": 10,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "832a6245-3ebf-4911-95ff-f67bb41987aa",
+      "agentId": "main",
+      "name": "heartbeat-main",
+      "enabled": true,
+      "createdAtMs": 1770556436513,
+      "updatedAtMs": 1771665236525,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 14400000,
+        "anchorMs": 1770556436513
+      },
+      "sessionTarget": "main",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Heartbeat check: Review Kanban board for new tasks (clickup-skill/scripts/clickup_client.py get_tasks list_id=901710515957), check calendar for upcoming events in next 24h, and report findings to Telegram."
+      },
+      "state": {
+        "nextRunAtMs": 1771679636513,
+        "lastRunAtMs": 1771665236518,
+        "lastStatus": "ok",
+        "lastDurationMs": 7,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "f6a39d97-419a-4218-96fa-62ced637cde4",
+      "name": "weekly-security-audit",
+      "enabled": true,
+      "createdAtMs": 1770874683129,
+      "updatedAtMs": 1771177248508,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * 0",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Weekly security audit reminder: Run OpenClaw security audit\nSummary: 0 critical · 2 warn · 1 info\nRun deeper: openclaw security audit --deep\n\nWARN\ngateway.trusted_proxies_missing Reverse proxy headers are not trusted\n  gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client checks cannot be spoofed.\n  Fix: Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only.\nconfig.secrets.gateway_password_in_config Gateway password is stored in config\n  gateway.auth.password is set in the config file; prefer environment variables for secrets when possible.\n  Fix: Prefer OPENCLAW_GATEWAY_PASSWORD (env) and remove gateway.auth.password from disk.\n\nINFO\nsummary.attack_surface Attack surface summary\n  groups: open=0, allowlist=1\ntools.elevated: enabled\nhooks: disabled\nbrowser control: enabled and OpenClaw update status\n\n┌──────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┐\n│ Item     │ Value                                                                                                    │\n├──────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┤\n│ Install  │ pnpm                                                                                                     │\n│ Channel  │ stable (default)                                                                                         │\n│ Update   │ available · pnpm · npm update 2026.2.9                                                                   │\n└──────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘\n\nUpdate available (npm 2026.2.9). Run: openclaw update, then report findings to Telegram."
+      },
+      "state": {
+        "nextRunAtMs": 1771761600000,
+        "lastRunAtMs": 1771177181320,
+        "lastStatus": "ok",
+        "lastDurationMs": 67188,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "59230d38-b457-48f4-989f-9b0bd78b4634",
+      "name": "daily-backup-github",
+      "enabled": true,
+      "createdAtMs": 1770875165560,
+      "updatedAtMs": 1771678902867,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Daily backup of Clara workspace to GitHub (https://github.com/jadegaul/CLARABOTAI). Run /home/jeremygaul/.openclaw/workspace/scripts/daily-backup.sh, verify it completes successfully, and report backup status to Telegram. Sensitive data (API keys, passwords, tokens) is automatically redacted."
+      },
+      "state": {
+        "nextRunAtMs": 1771765200000,
+        "lastRunAtMs": 1771678800007,
+        "lastStatus": "ok",
+        "lastDurationMs": 102860,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "05fe9c3b-e11e-4b1e-8571-c5206b89bba4",
+      "agentId": "main",
+      "name": "Daily Google Alerts Summary",
+      "enabled": true,
+      "createdAtMs": 1770978582009,
+      "updatedAtMs": 1771603313793,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "kind": "cron",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Read HEARTBEAT.md. Check Gmail for Google Alerts using: gog gmail search \"from:alerts@google.com OR Google Alert\" --account claragaulai@gmail.com --json. Get message content for any new alerts. Summarize the key news/updates in the alerts. Send a summary to Telegram (target: 7152537300). Format: '📰 **Daily Google Alerts Summary** [date]\\n\\n[bullet points of key items]'. If no new alerts, just reply HEARTBEAT_OK.",
+        "model": "ollama/kimi-k2.5:cloud",
+        "thinking": "minimal",
+        "timeoutSeconds": 120
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "7152537300"
+      },
+      "state": {
+        "nextRunAtMs": 1771689600000,
+        "lastRunAtMs": 1771603200003,
+        "lastStatus": "ok",
+        "lastDurationMs": 113790,
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

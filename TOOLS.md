@@ -93,18 +93,16 @@ python3 skills/clickup-skill/scripts/clickup_client.py update_task task_id="86dz
 
 ### Gmail
 
-**Status:** ✅ Configured for **claragaulai@gmail.com** only
+**Status:** ✅ Configured for multiple accounts
 
-**Primary Account:** `claragaulai@gmail.com`
+**Accounts:**
+1. **claragaulai@gmail.com** — Family Gmail (Jade/Sarah)
+2. **ClaraGaulAi@gmail.com** — Clara's personal email account (NEW)
 
-**Important:** Only use this account for Gmail operations:
-- Check/read emails
-- Send messages
-- Reply to messages
-- Search inbox
-- Draft emails
-
-**Do not use** `jeremylgaul@gmail.com` for Gmail unless explicitly requested.
+**Account usage:**
+- For family emails: Use `claragaulai@gmail.com`
+- For Clara's emails: Use `ClaraGaulAi@gmail.com`
+- **Do not use** `jeremylgaul@gmail.com` for Gmail unless explicitly requested.
 
 ---
 
@@ -124,7 +122,7 @@ python3 skills/clickup-skill/scripts/clickup_client.py update_task task_id="86dz
 
 ---
 
-#### SAG (ElevenLabs TTS)
+### SAG (ElevenLabs TTS)
 
 **Status:** ✅ Configured at `/home/linuxbrew/.linuxbrew/bin/sag`
 
@@ -137,6 +135,43 @@ python3 skills/clickup-skill/scripts/clickup_client.py update_task task_id="86dz
 - **River** - Announcements
 
 **Usage:** `sag "text"` or `sag speak -v Roger "text"`
+
+---
+
+### Clara Dashboard
+
+**Status:** ✅ Built and ready at `/home/jeremygaul/.openclaw/workspace/dashboard/index.html`
+
+**Features:**
+- 📊 **Status Panel** - AI state, current task, sub-agents, last activity
+- 📋 **Task Board** - Kanban with To Do / In Progress / Done / Archive (LOCAL STORAGE - separate from ClickUp!)
+  - Drag and drop tasks between columns
+  - Add/edit/delete tasks directly in the UI
+  - Persists in browser localStorage
+  - Fully independent from ClickUp
+- 📜 **Activity Log** - Full timestamped action log (non-negotiable visibility)
+- 📝 **Notes Panel** - Drop notes, auto-processed on heartbeat, marked "seen"
+- 📁 **Deliverables** - Quick links to reports, Google Drive, GitHub backup
+
+**Usage:**
+```bash
+# Open dashboard in browser (WSL)
+explorer.exe dashboard/index.html
+# Or on Linux/Mac:
+open dashboard/index.html
+# Or serve locally:
+cd dashboard && python3 -m http.server 8080
+# Then: http://localhost:8080
+```
+
+**Sync Data:**
+```bash
+# Update dashboard with current ClickUp tasks, status, etc.
+bash dashboard/scripts/sync-dashboard.sh
+
+# Or add to crontab for auto-sync every 15 minutes:
+*/15 * * * * cd /home/jeremygaul/.openclaw/workspace && bash dashboard/scripts/sync-dashboard.sh
+```
 
 ---
 

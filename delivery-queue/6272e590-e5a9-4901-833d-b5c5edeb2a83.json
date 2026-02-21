@@ -1,0 +1,17 @@
+{
+  "id": "6272e590-e5a9-4901-833d-b5c5edeb2a83",
+  "enqueuedAt": 1771589770080,
+  "channel": "whatsapp",
+  "to": "telegram:7152537300",
+  "payloads": [
+    {
+      "text": "⚠️ ✉️ Message: send failed: Cross-context messaging denied: action=send target provider \"telegram\" while bound to \"whatsapp\".",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": true,
+  "retryCount": 1,
+  "lastError": "Outbound not configured for channel: whatsapp"
+}

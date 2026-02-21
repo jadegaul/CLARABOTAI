@@ -1,0 +1,45 @@
+{
+  "title": "Transgender News Report - February 15, 2026",
+  "date": "2026-02-15",
+  "summary": "Top transgender news stories from February 11-15, 2026",
+  "stories": [
+    {
+      "headline": "Trans icon Ts Madison granted restraining order against content creator",
+      "source": "PinkNews",
+      "date": "Feb 13, 2026",
+      "summary": "Ts Madison, a prominent trans icon, received a restraining order against a content creator."
+    },
+    {
+      "headline": "California sues Trump administration to protect privacy of trans students",
+      "source": "PinkNews",
+      "date": "Feb 13, 2026",
+      "summary": "California filed a lawsuit against the Trump administration to defend transgender students' privacy rights."
+    },
+    {
+      "headline": "Trans women can use women's toilets, except at work, high court rules",
+      "source": "PinkNews",
+      "date": "Feb 13, 2026",
+      "summary": "UK High Court ruling: trans women can use women's toilets in public, but restricted in workplace settings.",
+      "citation": "Equality and Human Rights Commission (EHRC)"
+    },
+    {
+      "headline": "Top Democrats re-introduce trans bill of rights",
+      "source": "Washington Blade",
+      "date": "Feb 11, 2026",
+      "summary": "Congressional Democrats have reintroduced the Transgender Bill of Rights to codify protections for transgender Americans."
+    },
+    {
+      "headline": "Trans-led organization FLUX celebrates a decade of service",
+      "source": "Los Angeles Blade",
+      "date": "Feb 12, 2026",
+      "summary": "FLUX celebrated its tenth anniversary of providing transformative services to TGI communities."
+    },
+    {
+      "headline": "Trans students not included in new India University Grants Commission equity rules",
+      "source": "Washington Blade",
+      "date": "Feb 13, 2026",
+      "summary": "India's UGC released new equity rules that exclude transgender students from protections."
+    }
+  ],
+  "total": 6
+}
