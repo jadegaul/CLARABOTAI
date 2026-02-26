@@ -1,0 +1,17 @@
+{
+  "id": "e802a821-5f65-4b3d-8b26-493e10922280",
+  "enqueuedAt": 1772021265136,
+  "channel": "whatsapp",
+  "to": "telegram:7152537300",
+  "payloads": [
+    {
+      "text": "Ran the heartbeat check — noticed a small hiccup with the ClickUp connection, so I verified directly. All clear for now: no overdue tasks, no urgent emails, and your next calendar event is at 8am (the AI business course). Systems are nominal. ✓",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": true,
+  "retryCount": 1,
+  "lastError": "Outbound not configured for channel: whatsapp"
+}

@@ -1,0 +1,31 @@
+{
+  "last_check": "2026-02-20T20:14:00-08:00",
+  "check_type": "full",
+  "clickup": {
+    "list_id": "901710515956",
+    "list_name": "Clara's Task List",
+    "total_tasks": 5,
+    "tasks": [
+      "Task Automation (Cron Jobs)",
+      "Personal CRM (Modified for family)",
+      "Automated Backup System",
+      "Security Council (Nightly Audits)",
+      "Knowledge Base with RAG"
+    ],
+    "urgent_tasks": 0,
+    "overdue_tasks": 0,
+    "high_priority_tasks": 0
+  },
+  "calendar": {
+    "checked_account": "jeremylgaul@gmail.com",
+    "events_next_24h": 0,
+    "events": []
+  },
+  "weather": {
+    "location": "Portland",
+    "temperature": "45°F",
+    "condition": "Partly Cloudy",
+    "wind": "3mph"
+  },
+  "summary": "ALL CLEAR - No urgent tasks, no calendar events in next 24h"
+}

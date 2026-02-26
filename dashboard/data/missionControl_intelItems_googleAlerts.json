@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ga-20260223-1",
+    "category": "google-alerts",
+    "subCategory": "transgender-news",
+    "title": "Kansas law denies trans identities on driver's licenses, birth certificates",
+    "content": "Kansas is set to invalidate about 1700 driver's licenses held by transgender residents and roughly as many birth certificates under a new law.",
+    "source": "KSAT/U.S. News/Boston Globe",
+    "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.ksat.com/news/national/2026/02/22/new-law-puts-kansas-at-vanguard-of-denying-trans-identities-on-drivers-licenses-birth-certificates/&ct=ga&cd=CAEYBCoTNTY2MDEzMzA3MDM2OTQ3NDY5NTIcNzI1M2ZjYTg5ZWE3MmEyMTpjb206ZW46VVM6Ug&usg=AOvVaw10V6TVZjVlj85tCm_toSfX",
+    "timestamp": "2026-02-23T08:00:00-08:00",
+    "date": "2026-02-23",
+    "tags": ["kansas", "id-cards", "legislation", "birth-certificates"],
+    "priority": "high"
+  },
+  {
+    "id": "ga-20260223-2",
+    "category": "google-alerts",
+    "subCategory": "transgender-news",
+    "title": "Former general: Military trans troop removal a 'costly mistake'",
+    "content": "Former top general McChrystal calls Pentagon's removal of thousands of transgender troops a costly mistake amid global tensions.",
+    "source": "KUOW/NPR/NCPR",
+    "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.kuow.org/stories/former-top-general-calls-military-s-removal-of-trans-troops-a-costly-mistake&ct=ga&cd=CAEYAioTNTY2MDEzMzA3MDM2OTQ3NDY5NTIcNzI1M2ZjYTg5ZWE3MmEyMTpjb206ZW46VVM6Ug&usg=AOvVaw0VWB-bvzO4Ue9oqDzdz9y3",
+    "timestamp": "2026-02-23T08:00:00-08:00",
+    "date": "2026-02-23",
+    "tags": ["military", "trump", "policy", "mcchrystal"],
+    "priority": "high"
+  },
+  {
+    "id": "ga-20260223-3",
+    "category": "google-alerts",
+    "subCategory": "transgender-news",
+    "title": "California teens resist efforts to sideline trans athletes",
+    "content": "Trans athletes face intense efforts to sideline them from school sports, but California teens are resisting. Assistant Atty. Gen. for Civil Rights Harmeet Dhillon involved.",
+    "source": "Los Angeles Times",
+    "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.latimes.com/politics/story/2026-02-22/trans-athletes-face-intense-efforts-to-sideline-them-these-california-teens-are-resisting&ct=ga&cd=CAEYASoTNTY2MDEzMzA3MDM2OTQ3NDY5NTIcNzI1M2ZjYTg5ZWE3MmEyMTpjb206ZW46VVM6Ug&usg=AOvVaw2Jln03RZdYTf1WOw62fVLr",
+    "timestamp": "2026-02-23T08:00:00-08:00",
+    "date": "2026-02-23",
+    "tags": ["sports", "california", "youth", "athletes"],
+    "priority": "medium"
+  },
+  {
+    "id": "ga-20260223-4",
+    "category": "google-alerts",
+    "subCategory": "transgender-news",
+    "title": "Trans men will keep binding despite FDA crackdown",
+    "content": "Trans men say they'll keep binding despite FDA crackdown. 'They better take away duct tape.' Chest binders are a common first step to explore gender identity.",
+    "source": "Michigan Advance",
+    "url": "https://www.google.com/url?rct=j&sa=t&url=https://michiganadvance.com/2026/02/21/they-better-take-away-duct-tape-trans-men-say-theyll-keep-binding-despite-fda-crackdown/&ct=ga&cd=CAEYACoTNTY2MDEzMzA3MDM2OTQ3NDY5NTIcNzI1M2ZjYTg5ZWE3MmEyMTpjb206ZW46VVM6Ug&usg=AOvVaw33WPdRoC8M7YHTGz2jJRPm",
+    "timestamp": "2026-02-23T08:00:00-08:00",
+    "date": "2026-02-23",
+    "tags": ["fda", "binders", "healthcare", "binding"],
+    "priority": "medium"
+  },
+  {
+    "id": "ga-20260223-5",
+    "category": "google-alerts",
+    "subCategory": "transgender-news",
+    "title": "Slate: We Once Knew How to Protect Transgender Children",
+    "content": "Reflective piece on transgender kids healthcare bans. Everyone involved insisted on restraint and prioritized minimizing harm over winning a news cycle.",
+    "source": "Slate",
+    "url": "https://www.google.com/url?rct=j&sa=t&url=https://slate.com/life/2026/02/transgender-kids-healthcare-bans-supreme-court.html&ct=ga&cd=CAEYBioTNTY2MDEzMzA3MDM2OTQ3NDY5NTIcNzI1M2ZjYTg5ZWE3MmEyMTpjb206ZW46VVM6Ug&usg=AOvVaw1CefgeojeBCox3YfthvUHN",
+    "timestamp": "2026-02-23T08:00:00-08:00",
+    "date": "2026-02-23",
+    "tags": ["youth", "healthcare", "supreme-court", "slate"],
+    "priority": "medium"
+  }
+]

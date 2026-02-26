@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "runs": {
+    "98271e3c-e913-47d6-be08-8c65d1cf2b2e": {
+      "runId": "98271e3c-e913-47d6-be08-8c65d1cf2b2e",
+      "childSessionKey": "agent:main:subagent:29b77a92-f421-4645-a7f9-6615523e7460",
+      "requesterSessionKey": "agent:main:main",
+      "requesterOrigin": {
+        "to": "telegram:7152537300"
+      },
+      "requesterDisplayKey": "agent:main:main",
+      "task": "Run the 4-hour heartbeat check for Jade. Check:\n1. ClickUp tasks in both lists (Jade's: list_id=901710515957, Clara's: list_id=901710515956) - look for overdue or urgent items using the clickup skill\n2. Calendar events in next 2 hours (use gog calendar events jeremylgaul@gmail.com --hours 2)\n3. Any urgent emails\n4. System status\n\nReturn a summary of anything that needs attention. If nothing urgent, just report \"HEARTBEAT_OK\".",
+      "cleanup": "keep",
+      "createdAt": 1772107343903,
+      "startedAt": 1772107344000,
+      "archiveAtMs": 1772110943903,
+      "cleanupHandled": true,
+      "endedAt": 1772107350116,
+      "outcome": {
+        "status": "ok"
+      },
+      "cleanupCompletedAt": 1772107350158
+    }
+  }
+}
