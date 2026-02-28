@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "1543e95e-ca1e-4488-b611-61be39a01ae5",
+      "agentId": "main",
+      "name": "daily-summary",
+      "enabled": true,
+      "createdAtMs": 1770343730497,
+      "updatedAtMs": 1772200904956,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 6 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Generate a daily summary for Jade: Check the weather forecast, check the Kanban board for pending tasks, review today's calendar events, check for unread emails, and summarize what needs attention today. Send the summary to Telegram. Read HEARTBEAT.md for context.",
+        "model": "ollama/kimi-k2.5:cloud",
+        "thinking": "minimal",
+        "timeoutSeconds": 180
+      },
+      "state": {
+        "nextRunAtMs": 1772287200000,
+        "lastRunAtMs": 1772200800006,
+        "lastStatus": "ok",
+        "lastDurationMs": 104950,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "7152537300"
+      }
+    },
+    {
+      "id": "832a6245-3ebf-4911-95ff-f67bb41987aa",
+      "agentId": "main",
+      "name": "heartbeat-main",
+      "enabled": false,
+      "createdAtMs": 1770556436513,
+      "updatedAtMs": 1771962747456,
+      "schedule": {
+        "kind": "every",
+        "everyMs": 14400000,
+        "anchorMs": 1770556436513
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "next-heartbeat",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Heartbeat check: Review Kanban board for new tasks, check calendar for upcoming events in next 24h, and report findings to Telegram. Read HEARTBEAT.md for context. If nothing urgent, reply HEARTBEAT_OK.",
+        "model": "ollama/kimi-k2.5:cloud",
+        "thinking": "minimal",
+        "timeoutSeconds": 120
+      },
+      "state": {
+        "lastRunAtMs": 1771780436528,
+        "lastStatus": "ok",
+        "lastDurationMs": 35305,
+        "consecutiveErrors": 0
+      },
+      "delivery": {
+        "mode": "none",
+        "to": "7152537300"
+      }
+    },
+    {
+      "id": "f6a39d97-419a-4218-96fa-62ced637cde4",
+      "name": "weekly-security-audit",
+      "enabled": true,
+      "createdAtMs": 1770874683129,
+      "updatedAtMs": 1771761607017,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 4 * * 0",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Weekly security audit reminder: Run OpenClaw security audit\nSummary: 0 critical · 2 warn · 1 info\nRun deeper: openclaw security audit --deep\n\nWARN\ngateway.trusted_proxies_missing Reverse proxy headers are not trusted\n  gateway.bind is loopback and gateway.trustedProxies is empty. If you expose the Control UI through a reverse proxy, configure trusted proxies so local-client checks cannot be spoofed.\n  Fix: Set gateway.trustedProxies to your proxy IPs or keep the Control UI local-only.\nconfig.secrets.gateway_password_in_config Gateway password is stored in config\n  gateway.auth.password is set in the config file; prefer environment variables for secrets when possible.\n  Fix: Prefer OPENCLAW_GATEWAY_PASSWORD (env) and remove gateway.auth.password from disk.\n\nINFO\nsummary.attack_surface Attack surface summary\n  groups: open=0, allowlist=1\ntools.elevated: enabled\nhooks: disabled\nbrowser control: enabled and OpenClaw update status\n\n┌──────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────┐\n│ Item     │ Value                                                                                                    │\n├──────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────┤\n│ Install  │ pnpm                                                                                                     │\n│ Channel  │ stable (default)                                                                                         │\n│ Update   │ available · pnpm · npm update 2026.2.9                                                                   │\n└──────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────┘\n\nUpdate available (npm 2026.2.9). Run: openclaw update, then report findings to Telegram."
+      },
+      "state": {
+        "nextRunAtMs": 1772366400000,
+        "lastRunAtMs": 1771761600005,
+        "lastStatus": "ok",
+        "lastDurationMs": 7012,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "59230d38-b457-48f4-989f-9b0bd78b4634",
+      "name": "daily-backup-github",
+      "enabled": true,
+      "createdAtMs": 1770875165560,
+      "updatedAtMs": 1772197219060,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "Daily backup of Clara workspace to GitHub (https://github.com/jadegaul/CLARABOTAI). Run /home/jeremygaul/.openclaw/workspace/scripts/daily-backup.sh, verify it completes successfully, and report backup status to Telegram. Sensitive data (API keys, passwords, tokens) is automatically redacted."
+      },
+      "state": {
+        "nextRunAtMs": 1772283600000,
+        "lastRunAtMs": 1772197200005,
+        "lastStatus": "ok",
+        "lastDurationMs": 19055,
+        "consecutiveErrors": 0,
+        "runningAtMs": 1772283600002
+      }
+    },
+    {
+      "id": "05fe9c3b-e11e-4b1e-8571-c5206b89bba4",
+      "agentId": "main",
+      "name": "Daily Google Alerts Summary",
+      "enabled": true,
+      "createdAtMs": 1770978582009,
+      "updatedAtMs": 1772208180007,
+      "schedule": {
+        "expr": "0 8 * * *",
+        "kind": "cron",
+        "tz": "America/Los_Angeles"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Daily Google Alerts Summary Task:\n\n1. Search Gmail for Google Alerts: Use the gog skill to search for emails from googlealerts-noreply@google.com with subject containing \"Transgender news\" in the claragaulai@gmail.com account.\n\n2. For each alert email found:\n   - Extract the message ID\n   - Use gog to get the full message content\n   - Parse the news links and headlines\n   - Extract the key stories\n\n3. Create a structured summary with:\n   - Date of the alerts\n   - List of key news items with titles and brief summaries\n   - Source links where available\n\n4. Save the alerts data to localStorage with key `mc_googleAlerts` including:\n   - date: today's date\n   - alerts: array of news items with title, summary, source, url\n   - summary: text summary\n\n5. Send a formatted summary to Telegram (chat ID: 7152537300) in this format:\n   '📰 **Daily Google Alerts Summary** - [date]\n   \n   [bullet points of 3-5 key news items]\n   \n   _Source: Google Alerts (Transgender News)_\n   \n   Check the Intel tab in Mission Control for full details.'\n\n6. Also append the alerts to the intel items in Mission Control by saving to `missionControl_intelItems` localStorage with category 'google-alerts'.\n\nIf no new alerts or errors occur, report the issue but don't fail silently. Use kimi-k2.5:cloud model for best Gmail parsing.",
+        "model": "ollama/kimi-k2.5:cloud",
+        "thinking": "minimal",
+        "timeoutSeconds": 180
+      },
+      "delivery": {
+        "mode": "announce",
+        "to": "7152537300"
+      },
+      "state": {
+        "nextRunAtMs": 1772294400000,
+        "lastRunAtMs": 1772208000006,
+        "lastStatus": "error",
+        "lastDurationMs": 180001,
+        "consecutiveErrors": 1,
+        "lastError": "Error: cron: job execution timed out"
+      }
+    }
+  ]
+}

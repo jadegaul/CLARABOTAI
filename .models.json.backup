@@ -1,0 +1,38 @@
+{
+  "providers": {
+    "ollama": {
+      "baseUrl": "http://127.0.0.1:11434/v1",
+      "apiKey": "ollama-local",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "kimi-k2.5:cloud",
+          "name": "kimi-k2.5:cloud",
+          "reasoning": false,
+          "input": ["text"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 262144,
+          "maxTokens": 16384
+        },
+        {
+          "id": "llama3.2",
+          "name": "llama3.2",
+          "reasoning": false,
+          "input": ["text"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        },
+        {
+          "id": "ollama/llama3.2",
+          "name": "ollama/llama3.2",
+          "reasoning": false,
+          "input": ["text"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}

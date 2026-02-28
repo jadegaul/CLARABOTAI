@@ -1,0 +1,17 @@
+{
+  "id": "6e815471-1049-4ad5-8f8d-7bed193086c3",
+  "enqueuedAt": 1771679686541,
+  "channel": "whatsapp",
+  "to": "telegram:7152537300",
+  "payloads": [
+    {
+      "text": "Calendar's clear too — no events for the next 24 hours. Enjoy your Saturday! ☕",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": true,
+  "retryCount": 1,
+  "lastError": "Outbound not configured for channel: whatsapp"
+}

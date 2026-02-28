@@ -1,0 +1,21 @@
+{
+  "id": "65778625-29bc-48a5-aad0-9466c5c9395f",
+  "enqueuedAt": 1771682616595,
+  "channel": "whatsapp",
+  "to": "telegram:7152537300",
+  "payloads": [
+    {
+      "text": "**Good morning!** ☕ Here's your daily summary for Saturday, Feb 21:\n\n---\n\n🌧️ **Weather:** Rain today, 46°F high, 100% chance of precipitation. Umbrella recommended!\n\n📋 **Calendar:** No events — free Saturday! ✅\n\n📬 **Email:** 4 unread (Google Alerts, no urgent replies needed)\n\n🎯 **ClickUp Tasks — 15 pending:**\n\n**Your tasks (10):**\n- 🚗 Car maintenance: oil change, registration, detail, tires, air filter (5 items!)\n- 💻 Projects: HereBuzzer, Skill Forge, Silver Tech, Rate It Pro, PDX Energy Healing\n\n**Clara's tasks (5):**\n- Task Automation, Personal CRM, Backup System, Security Council, Knowledge Base\n\n---\n\n🔴 **Needs attention today:** Those 5 car maintenance tasks have been sitting in ClickUp — might be a good weekend to tackle them!\n\nHave a wonderful Saturday! 🌈",
+      "mediaUrls": []
+    },
+    {
+      "text": "⚠️ ✉️ Message: send failed: Cross-context messaging denied: action=send target provider \"telegram\" while bound to \"whatsapp\".",
+      "mediaUrls": []
+    }
+  ],
+  "threadId": null,
+  "replyToId": null,
+  "bestEffort": true,
+  "retryCount": 1,
+  "lastError": "Outbound not configured for channel: whatsapp"
+}

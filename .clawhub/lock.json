@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "clickup-skill": {
+      "version": "1.1.1",
+      "installedAt": 1770370049195
+    },
+    "youtube-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1770861068594
+    },
+    "api-gateway": {
+      "version": "1.0.31",
+      "installedAt": 1771184229899
+    },
+    "google-docs": {
+      "version": "1.0.5",
+      "installedAt": 1771184649824
+    },
+    "google-sheets": {
+      "version": "1.0.6",
+      "installedAt": 1771184673293
+    },
+    "google-drive": {
+      "version": "1.0.5",
+      "installedAt": 1771184962737
+    },
+    "humanizer": {
+      "version": "1.0.0",
+      "installedAt": 1771366088204
+    }
+  }
+}
